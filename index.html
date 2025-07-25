@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrish Raghavan S - Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Harrish Raghavan S, a passionate software developer and tech enthusiast. Explore my projects, skills, and services in Arduino programming and game development.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Portfolio.</div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#internship" class="nav-link">Internship</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="hero-greeting">Hello, It's Me</h3>
+                    <h1 class="hero-name">Harrish Raghavan S</h1>
+                    <h2 class="hero-role">
+                        And I'm a <span id="typing-text" class="typing-text">Software Developer</span>
+                    </h2>
+                    <p class="hero-description">
+                        I'm a passionate fresher with experience in Arduino programming and game development, 
+                        eager to learn new technologies and contribute to exciting projects.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    <button class="btn-primary" onclick="scrollToSection('about')">More About Me</button>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="assets/profile.jpg" alt="Harrish Raghavan S" class="profile-image">
+                        <div class="floating-element floating-1"></div>
+                        <div class="floating-element floating-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Software Developer & Tech Enthusiast</h3>
+                    <p>
+                        As a fresh graduate with a passion for technology, I'm excited to begin my journey 
+                        in software development. I have experience with Arduino programming, game development, 
+                        and 3D modeling, with a strong foundation in hardware programming and creative tools.
+                    </p>
+                    <p>
+                        I'm always eager to learn new technologies like JavaScript and contribute to innovative projects. 
+                        My goal is to expand my skill set and create efficient, scalable solutions that make a real impact.
+                    </p>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Phone</h4>
+                            <p>+91 80729 81124</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p>harrishraghavan514@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Experience</h4>
+                            <p>Fresher</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-facts">
+                    <div class="facts-card">
+                        <h4>Quick Facts</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Fast learner with strong problem-solving skills</li>
+                            <li><i class="fas fa-check"></i> Passionate about clean, efficient code</li>
+                            <li><i class="fas fa-check"></i> Team player with excellent communication</li>
+                            <li><i class="fas fa-check"></i> Always up-to-date with latest technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">What I can offer</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and modern web applications using latest technologies and best practices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Creating cross-platform mobile applications with seamless user experience and performance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Developing robust backend systems and APIs to power your applications efficiently.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and beautiful user interfaces with focus on user experience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Implementing cloud-based solutions and deployments for scalable applications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>API Integration</h3>
+                    <p>Integrating third-party APIs and services to enhance application functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon orange"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon blue"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-microchip skill-icon green"></i>
+                    <h3>Arduino</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-gamepad skill-icon purple"></i>
+                    <h3>Construct3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-cube skill-icon orange-alt"></i>
+                    <h3>Blender</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fab fa-adobe skill-icon blue-alt"></i>
+                    <h3>Photoshop</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon blue-code"></i>
+                    <h3>VS Code</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-robot skill-icon green-robot"></i>
+                    <h3>Robotics</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-percentage="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="internship">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Internship Experience</h2>
+                <p class="section-subtitle">Professional development journey</p>
+            </div>
+            
+            <div class="internship-content">
+                <div class="internship-card">
+                    <div class="timeline-indicator">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    
+                    <div class="internship-details">
+                        <div class="internship-header">
+                            <div class="internship-info">
+                                <h3>Software Development Intern</h3>
+                                <h4>AMTDC Company</h4>
+                                <p>IIT Madras Research Park</p>
+                            </div>
+                            <div class="internship-status">
+                                <span class="status-badge">Completed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="internship-description">
+                            <p>
+                                Successfully completed a comprehensive internship program at AMTDC Company, located at the prestigious 
+                                IIT Madras Research Park. This experience provided valuable exposure to industry-standard development 
+                                practices and cutting-edge technology solutions.
+                            </p>
+                            
+                            <div class="internship-highlights">
+                                <div class="highlights-section">
+                                    <h5><i class="fas fa-lightbulb"></i> Key Learning Areas</h5>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Industry-standard development workflows</li>
+                                        <li><i class="fas fa-check"></i> Team collaboration and project management</li>
+                                        <li><i class="fas fa-check"></i> Real-world problem solving approaches</li>
+                                        <li><i class="fas fa-check"></i> Professional software development practices</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="highlights-section">
+                                    <h5><i class="fas fa-award"></i> Achievements</h5>
+                                    <ul>
+                                        <li><i class="fas fa-star"></i> Successfully completed all assigned projects</li>
+                                        <li><i class="fas fa-star"></i> Gained hands-on experience with modern technologies</li>
+                                        <li><i class="fas fa-star"></i> Developed strong professional network</li>
+                                        <li><i class="fas fa-star"></i> Enhanced technical and soft skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="internship-quote">
+                                <p>
+                                    "This internship at IIT Madras Research Park was a transformative experience that 
+                                    bridged the gap between academic learning and industry requirements, preparing me 
+                                    for a successful career in software development."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Human Following Robot" class="project-image">
+                    <div class="project-content">
+                        <h3>Human Following Robot</h3>
+                        <p>An intelligent robot that follows human movement using Arduino-based sensor technology and motor control systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino UNO</span>
+                            <span class="tech-tag">IR Sensor</span>
+                            <span class="tech-tag">Ultrasonic Sensor</span>
+                            <span class="tech-tag">Servo Motor</span>
+                            <span class="tech-tag">Motor Driver Shield</span>
+                            <span class="tech-tag">DC Gear Motor</span>
+                            <span class="tech-tag">Arduino IDE</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="3D Pixel Game Development" class="project-image">
+                    <div class="project-content">
+                        <h3>3D Pixel Game Development</h3>
+                        <p>A creative 3D pixel-style game featuring immersive graphics and engaging gameplay mechanics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Construct3</span>
+                            <span class="tech-tag">VS Code</span>
+                            <span class="tech-tag">Photoshop</span>
+                            <span class="tech-tag">Blender</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>harrishraghavan514@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 80729 81124</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3>Send Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>
+                    © 2024 Harrish Raghavan S. All rights reserved. | Designed with 
+                    <i class="fas fa-heart"></i> by Harrish
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
